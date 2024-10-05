@@ -1,0 +1,15 @@
+org: kevinl
+app: aws-node-project
+service: aws-node-project
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs20.x
+  architecture: arm64
+
+functions:
+  function1:
+    handler: src/function1.handler
+  function2:
+    handler: src/function2.handler
